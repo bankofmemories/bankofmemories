@@ -1,0 +1,41 @@
+{
+  "name": "alex-studio-ico-4",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "material-ui": "0.19.3",
+    "moment": "2.18.1",
+    "moment-duration-format": "1.3.0",
+    "prop-types": "15.6.0",
+    "react": "16.0.0",
+    "react-bootstrap-table": "4.0.6",
+    "react-dom": "16.0.0",
+    "react-redux": "5.0.6",
+    "react-scripts": "1.0.14",
+    "react-transition-group": "1.1.2",
+    "reactstrap": "4.8.0",
+    "redux": "3.7.2",
+    "redux-logger": "3.0.6",
+    "styled-components": "2.2.0",
+    "truffle-contract": "3.0.0",
+    "web3": "0.20.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "compile": "truffle compile && cp -R build/ src/",
+    "deploy": "forever start -a --uid alex_ico_4 react-scripts start",
+    "reset-linux": "truffle migrate --reset && cp -R build/contracts src/",
+    "reset": "truffle migrate --reset && cp -R build/ src/"
+  },
+  "devDependencies": {
+    "eslint": "4.8.0",
+    "eslint-config-airbnb-base": "12.0.1",
+    "eslint-import-resolver-alias": "1.0.3",
+    "eslint-import-resolver-node": "0.3.1",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-react": "7.4.0"
+  }
+}
